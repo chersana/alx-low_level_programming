@@ -1,12 +1,10 @@
 #include "main.h"
-#include <stddef>
 /**
  * _strchr - function that locates a character in a string
  * @s: string
  * @c: character
- * @null: string
  *
- * return: char c
+ * return: character 
  */
 char *_strchr(char *s, char c)
 {
