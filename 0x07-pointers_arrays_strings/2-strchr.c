@@ -4,23 +4,23 @@
  * @s: string
  * @c: character
  *
- * return: character 
+ * return: character
  */
 char *_strchr(char *s, char c)
 {
-	int i, j=0;
+	int i, j = 0;
 
 	while (s[j])
 	{
 		j++;
 	}
-	for (i=0; i <=j; i++)
+	for (i = 0; i <= j; i++)
 	{
 		if (c == s[i])
 		{
 			s += i;
-			return (s)
-		}	
+			return (s);
+		}
 	}
 	return ('\0');
 }
