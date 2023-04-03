@@ -8,7 +8,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int n = 0, b = 0;
+	int n = 0, b;
 
 	while (s[n])
 	{
@@ -23,6 +23,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		n++;
 	}
-
 	return ('\0');
 }
