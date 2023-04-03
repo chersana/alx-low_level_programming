@@ -12,6 +12,8 @@ char *_strpbrk(char *s, char *accept)
 
 	while (s[n])
 	{
+		b = 0;
+
 		while (accept[b])
 		{
 			if (s[n] == accept[b])
@@ -23,5 +25,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 		n++;
 	}
+
 	return ('\0');
 }
