@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
- * array_iterator - function that prints a name
+ * print_name - function that prints a name
  * @name: input
  * @f: a pointer
  *
