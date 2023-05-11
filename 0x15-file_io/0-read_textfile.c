@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	ssize_t file_descriptor;
-	ssize_t read;
+	ssize_t b_read;
 	ssize_t written;
 
 	file_descriptor = open(filename, O_RDONLY);
@@ -20,8 +20,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	buffer = malloc(sizeof(char) * letters);
-	read = read(file_descriptor, buffer, letters);
-	written = write(STDOUT_FILENO, buffer, read);
+	b_read = read(file_descriptor, buffer, letters);
+	written = write(STDOUT_FILENO, buffer, b_read);
 
 	free(buffer);
 	close(file_descriptor);
